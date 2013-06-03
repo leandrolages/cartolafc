@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Cartola FC - Apps</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <!-- Bootstrap -->
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+   </head>
+   <body>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+               return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=404090626364978";
+            fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="container">
+         <div class="hero-unit">
+            <h2>CartolaFC Apps</h2>
+
+            <div class="text-right">
+               <div class="fb-like" data-href="http://leandrolages.com/cartolafc" data-send="true" data-width="450" data-show-faces="true"></div>
+            </div>
+            
+            <h4>Como funciona?</h4>
+            <p>
+               O app abaixo permite que você, cartoleiro, visualize a média da pontuação média e da última rodada da sua atual escalação para a próxima rodada.
+               Com isso, dá pra ter uma idéia se seu time tá bem escalado ou não e se há discrepância muito grande entre as médias.
+            </p>
+
+            <h4>Como usar?</h4>
+            <ol>
+               <li>Arraste o botão a seguir para sua barra de favoritos</li>
+               <li>Entre na página de seu time: <a href="http://cartolafc.globo.com/#!/time">http://cartolafc.globo.com/#!/time</a></li>
+               <li>Com seu time escalado, clique no botão que você adicionou no passo 1, na sua barra de favoritos.</li>
+               <li>Pronto! Você visualizará as médias de seu time escalado.</li>
+               <li class="alert-danger">PS: Este app só funciona, por enquanto, no navegador Google Chrome.</li>
+            </ol>
+            <p class="well text-center">
+               <a class="btn btn-success btn-large" href="javascript:var cartolaBM=function(){if(typeof jQuery('#jogadores-lista table').get(0)=='undefined'){alert('Você precisa está na página de seu time para que o app funcione. A página é http://cartolafc.globo.com/#!/time');return}var e=jQuery('.ultima');var t=jQuery('.ultima').prev();var n=0;var r=0;for(var i=0;i<e.length;i++){n=n+parseFloat(e[i].innerHTML);r=r+parseFloat(t[i].innerHTML)}jQuery('#jogadores-lista table').append('<tr><td style=\'color:black; font-size:13px; background-color: #efefef\' colspan=\'7\'><strong>Médias do seu time</strong></td><td>'+r.toFixed(2)+'</td><td colspan\'2\'>'+n.toFixed(2)+'</td>')}()">
+                  CartolaFC App - Médias
+               </a>
+            </p>
+
+            <h4>Exemplo</h4>
+            <p>
+               Abaixo uma imagem exemplificando o funcionamento do app.   
+            </p>
+            <div>
+               <img src="soma.png"/>
+            </div>
+         </div>
+         
+         <div class="text-center">
+            <div class="fb-comments" data-href="http://leandrolages.com/cartolafc" data-width="800" data-num-posts="10"></div>
+         </div>
+      </div>
+   </body>
+</html>
