@@ -11,5 +11,5 @@ var cartolaBM = function() {
       n = n + parseFloat(e[i].innerHTML);
       r = r + parseFloat(t[i].innerHTML)
    }
-   jQuery('#jogadores-lista table').append('<tr><td style=\'color:black; font-size:13px; background-color: #efefef\' colspan=\'7\'><strong>Médias do seu time</strong></td><td>' + r.toFixed(2) + '</td><td colspan\'2\'>' + n.toFixed(2) + '</td>')
+   jQuery('#jogadores-lista table').append('<tr><td style=\'color:black; font-size:13px; background-color: #efefef\' colspan=\'7\'><strong>Soma da média / soma da última</strong></td><td>' + r.toFixed(2) + '</td><td colspan\'2\'>' + n.toFixed(2) + '</td>')
 }();
